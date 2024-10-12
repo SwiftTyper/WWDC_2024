@@ -1,7 +1,7 @@
 # Pushaton - Swift Student Challenge Submission
 
 ## Overview
-Pushaton is a fitness game that combines physical exercise (specifically pushups) with engaging gameplay. It was developed for the Swift Student Challenge, showcasing the integration of ML & Apple Frameworks with health-promoting activities.
+Pushaton is an unique fitness game that combines pushups with engaging gameplay. It was recognized as a one of the distinguished submissions in Apple's Swift Student Challenge.
 
 https://github.com/user-attachments/assets/c6b090f8-3171-4060-9d7d-3a518ec3adc2
 
