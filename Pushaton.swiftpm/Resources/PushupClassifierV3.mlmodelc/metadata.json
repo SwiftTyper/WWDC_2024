@@ -1,0 +1,84 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float16",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "label",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "keyType" : "String",
+        "formattedType" : "Dictionary (String → Double)",
+        "type" : "Dictionary",
+        "name" : "labelProbabilities",
+        "shortDescription" : ""
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 6,
+    "mlProgramOperationTypeHistogram" : {
+      "ListGather" : 3,
+      "MakeList" : 6,
+      "Linear" : 3,
+      "SliceByIndex" : 1,
+      "WhileLoop" : 3,
+      "Transpose" : 1,
+      "Matmul" : 6,
+      "ListScatter" : 3,
+      "Relu" : 8,
+      "Mul" : 9,
+      "Cast" : 23,
+      "ListRead" : 3,
+      "Add" : 12,
+      "ListWrite" : 3,
+      "Sigmoid" : 9,
+      "Softmax" : 1,
+      "Split" : 3,
+      "Less" : 3
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "12.0",
+      "tvOS" : "15.0",
+      "visionOS" : "1.0",
+      "watchOS" : "8.0",
+      "iOS" : "15.0",
+      "macCatalyst" : "15.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "7.1",
+      "com.github.apple.coremltools.source" : "tensorflow==2.12.0"
+    },
+    "classLabels" : [
+      "Pushup Down",
+      "Pushup Up",
+      "Pushup Up Hold",
+      "Pushup Down Hold"
+    ],
+    "generatedClassName" : "PushupClassifierV3",
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 15 × 16)",
+        "shortDescription" : "",
+        "shape" : "[1, 15, 16]",
+        "name" : "poses",
+        "type" : "MultiArray"
+      }
+    ],
+    "method" : "predict"
+  }
+]
